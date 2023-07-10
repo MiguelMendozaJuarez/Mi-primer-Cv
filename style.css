@@ -1,15 +1,31 @@
 
 body{
+    background: url(./imagenes/FONDO.jpg);
+    background-size: contain;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CV{
+    width: 70%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 40);
 }
 
+
+
+
+
+
 header{
+    width: 100%;
     background-image: url(https://media.istockphoto.com/id/1165651037/es/foto/negro-fondo-de-fondo-textura-interior-y-pared-exterior-de-piedra-en-blanco-para-el-dise%C3%B1o.jpg?s=612x612&w=0&k=20&c=4VdOuEc8hGBv2YDaK3lJHfVdrs-N2SZFg4rHNjgr4Q8=);
 }
-/*Flexbox*/
+
 .profliephoto{
     display: flex;
     justify-content: center;
@@ -35,7 +51,6 @@ header{
     display: flex;
 }
 
-/*Estilos*/
 
 .profilename p, .profilename h1{
     padding: 0%;
@@ -79,6 +94,7 @@ li {
 }
 
 .footer{
+    width: 100%;
     background-color: rgb(209, 208, 208);
     font-size: 40px;
     display: flex;
@@ -86,10 +102,25 @@ li {
 }
 
 .footer img{
-    height: 40px;
-    height: 40px;
-    padding: 3px 20px 0px 0px;
-    
+    height: 30px;
+    height: 30ppx;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin:7px;
+    transition: all .4s ease-in-out;
+
+}
+
+.footer img:hover {
+    height: 30px;
+    height: 30ppx;
+    padding: 10px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 50px;
+    margin:7px;
+    transform: scale(1.2);
 }
 
 .division{
