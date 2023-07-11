@@ -1,73 +1,17 @@
-
 body{
     background: url(./imagenes/FONDO.jpg);
-    background-size: contain;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.CV{
-    width: 70%;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 40);
+    padding: 20px;
 }
 
-
-
-
-
-
-header{
-    width: 100%;
-    background-image: url(https://media.istockphoto.com/id/1165651037/es/foto/negro-fondo-de-fondo-textura-interior-y-pared-exterior-de-piedra-en-blanco-para-el-dise%C3%B1o.jpg?s=612x612&w=0&k=20&c=4VdOuEc8hGBv2YDaK3lJHfVdrs-N2SZFg4rHNjgr4Q8=);
-}
-
-.profliephoto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-profile {
-    border: solid; 
-    size: 1px;
-    border-radius: 20%;
-} 
-
-.profilename
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-}
-
-.exp{
-    display: flex;
-}
-
-
-.profilename p, .profilename h1{
-    padding: 0%;
-    margin: 0;
-    color: grey; 
-}   
-
-.personaldata {
-    margin: 0;
-    padding: 3px;
-    background-color: rgb(138, 137, 137);
-    width: 20%;
-}
-
-.personaldata h2, .exp h2{
-    padding: 10px;
-    margin: 0;
+.paper{
+    width: 80%;
+    height: 80%;
 }
 
 li {
@@ -75,23 +19,75 @@ li {
     padding-bottom: 5px;
 }
 
-.personaldata ul li img{
+/* header */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1165651037/es/foto/negro-fondo-de-fondo-textura-interior-y-pared-exterior-de-piedra-en-blanco-para-el-dise%C3%B1o.jpg?s=612x612&w=0&k=20&c=4VdOuEc8hGBv2YDaK3lJHfVdrs-N2SZFg4rHNjgr4Q8=);
+    color: gray;
+}
+
+.header__photo{
+    margin: 20px 0px 0px 0px;
+    border-radius: 20%;  
+    box-shadow: 0 0 15px #858585;
+    background: #6e6d6d;
+}
+
+.header__h1, .header__p{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* main */
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main__personaldata {
+    margin: 0;
+    padding: 3px;
+    background-color: rgb(138, 137, 137);
+    width: 25%;
+    height: 100%;
+}
+
+.main__profile{
+    margin: 0;
+    padding: 3px;
+    background-color: rgb(238, 233, 233);
+    width: 75%;
+}
+
+.personaldata__img-icon{
     height: 15px;
     height: 15px;
     padding: 3px 0px 0px 0px;
 }
 
-.link{
+.personaldata__img-division{
+    height: 20px;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.personaldata__link{
     color: black;
     font-size: 12px;
 }
 
-.profile{
-    margin: 0;
-    padding: 10px;
-    width: 80%;
-    background-color: rgb(238, 233, 233);
-}
+/* footer */
 
 .footer{
     width: 100%;
@@ -101,7 +97,7 @@ li {
     justify-content: center;
 }
 
-.footer img{
+.footer__img{
     height: 30px;
     height: 30ppx;
     padding: 10px;
@@ -113,7 +109,7 @@ li {
 
 }
 
-.footer img:hover {
+.footer__img:hover {
     height: 30px;
     height: 30ppx;
     padding: 10px;
@@ -121,12 +117,4 @@ li {
     border-radius: 50px;
     margin:7px;
     transform: scale(1.2);
-}
-
-.division{
-    height: 20px;
-    width: 70%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
